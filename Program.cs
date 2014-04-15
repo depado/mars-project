@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 #endregion
 
-namespace Mars-Project
+namespace MarsProject
 {
     static class Program
     {

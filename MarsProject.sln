@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mars-Project", "Mars-Project.csproj", "{F52D3A81-7984-4DAD-A309-5B833F5F1C98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsProject", "MarsProject.csproj", "{F52D3A81-7984-4DAD-A309-5B833F5F1C98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,6 @@ Global
 		{F52D3A81-7984-4DAD-A309-5B833F5F1C98}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Mars-Project.csproj
+		StartupItem = MarsProject.csproj
 	EndGlobalSection
 EndGlobal
