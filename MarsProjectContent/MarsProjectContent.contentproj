@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AAFE864E-FEE1-4EFF-9068-D45C2F2051EE}</ProjectGuid>
+    <ProjectGuid>{599F67D5-C66F-4DB5-88B9-D81A214B42A6}</ProjectGuid>
     <ProjectTypeGuids>{96E2B04D-8817-42C6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ContentPipeLine</RootNamespace>
-    <AssemblyName>Content-PipeLine</AssemblyName>
+    <RootNamespace>MarsProjectContent</RootNamespace>
+    <AssemblyName>MarsProjectContent</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
