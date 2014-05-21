@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 using Microsoft.Xna.Framework.GamerServices;
+using MonoGui001;
 #endregion
 
 namespace marsdem_Vi
@@ -19,6 +20,7 @@ namespace marsdem_Vi
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         gui Gui = new gui();
+        
 
         public Game1()
             : base()
@@ -37,7 +39,7 @@ namespace marsdem_Vi
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            
             base.Initialize();
         }
 
@@ -90,6 +92,8 @@ namespace marsdem_Vi
             // TODO: Add your drawing code here
             spriteBatch.Begin();
             Gui.Draw(spriteBatch);
+
+            
             spriteBatch.End();
             base.Draw(gameTime);
         }
