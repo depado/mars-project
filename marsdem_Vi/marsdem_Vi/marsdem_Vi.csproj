@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -93,6 +93,10 @@
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Gdal020\Gdal020.csproj">
+      <Project>{14a49360-142f-4e18-b470-53e93a49ab18}</Project>
+      <Name>Gdal020</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MonoGui001\MonoGui001.csproj">
       <Project>{9f824d77-5934-4302-a842-2e3ca6d1131e}</Project>
       <Name>MonoGui001</Name>

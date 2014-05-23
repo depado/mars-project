@@ -9,6 +9,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework;
 
 using MonoGui001;
+using Gdal020;
 
 
 namespace marsdem_Vi
@@ -32,7 +33,11 @@ namespace marsdem_Vi
         private int ResolutionWidth;
         private int ResolutionHeight;
         
-
+        // gdal elements
+        GdalHub gdalHub;
+        string MapName;
+        
+        string GdalDirectory = "marsmaps";
 
         public gui()
         {
@@ -240,12 +245,27 @@ namespace marsdem_Vi
                     DrawLoop(spritebatch, about);
                     break;
                 case GuiState.NewMap:
+                    
                     DrawLoop(spritebatch, newmap);
                     explorer.launch();
                     if (explorer.FilePath == string.Empty) { guistate = GuiState.NewMap; }
-                    else { guistate = GuiState.BrowseMap; 
+                    else if(explorer.FilePath != string.Empty )
+                    {
+                        
+                        if (explorer.FilePath != "search cancelled")
+                        {
                             // GDAL TRANSFORM HERE
-                            explorer.FilePath = string.Empty; }
+                            gdalHub = new GdalHub(explorer.FilePath,GdalDirectory);
+                            MapName = gdalHub.MapName;
+                            
+                            guistate = GuiState.BrowseMap;
+                        }
+                        else { guistate = GuiState.MainMenu; }
+                        
+                        
+                        explorer.FilePath = string.Empty;
+                    }
+                    
                     break;
                 case GuiState.BrowseMap:
                     DrawLoop(spritebatch, browsemap);

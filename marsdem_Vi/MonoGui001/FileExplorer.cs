@@ -11,9 +11,9 @@ namespace MonoGui001
     public class FileExplorer
     {
         // var
-        bool threadExist = false;
+        public bool FileDialogFocus = false;
         public string FilePath= string.Empty;
-        OpenFileDialog browseDialog = new OpenFileDialog();
+        OpenFileDialog browseDialog; 
         Thread t;
 
         public FileExplorer() 
@@ -24,14 +24,23 @@ namespace MonoGui001
 
         public void launch()
         {
-            if (threadExist == false ) 
+            
+            if (FileDialogFocus == false && t == null )
             {
                 
                 t = new Thread(new ThreadStart(launchbrowse)); 
                 t.SetApartmentState(ApartmentState.STA);
                 t.Start();
-                threadExist = true;
+                FileDialogFocus = true;
+                
              }
+            else if (FileDialogFocus == false && t != null)
+            {
+                
+                t = null;
+                
+            }
+            
 
             
 
@@ -41,17 +50,27 @@ namespace MonoGui001
 
         private void launchbrowse()
         {
-            
+
+
+            browseDialog = new OpenFileDialog();
             browseDialog.Filter = "lbl files|*.lbl";
             browseDialog.InitialDirectory = "C:";
             if (browseDialog.ShowDialog() == DialogResult.OK)
             {
                 FilePath = browseDialog.FileName;
-                Console.WriteLine(FilePath);
+                FileDialogFocus = false;
+            }
+            if (browseDialog.ShowDialog() == DialogResult.Cancel)
+            {
+                FilePath = "search cancelled";
+                FileDialogFocus = false;
                 
-                threadExist = false;
             }
            
         }
+
+
+        
+} 
     }
-}
+
