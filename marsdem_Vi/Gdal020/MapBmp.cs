@@ -90,7 +90,7 @@ namespace Gdal020
                 /* -------------------------------------------------------------------- */
                 /*      Processing the raster                                           */
                 /* -------------------------------------------------------------------- */
-                SaveBitmapBuffered(ds, Directory +"/" + Path.GetFileNameWithoutExtension(FilePath)+".bmp" , 100);
+                SaveBitmapBuffered(ds, Directory +"/" + Path.GetFileNameWithoutExtension(FilePath) , 100);
 
 
 
@@ -191,7 +191,11 @@ namespace Gdal020
                 }
             }
 
-            bitmap.Save(filename);
+            bitmap.Save(filename + ".bmp");
+            float scale = bitmap.Width / 1024;
+            Bitmap map = new Bitmap(bitmap, new Size(1024,(int)(bitmap.Height/scale)));
+            map.Save(filename + "_icon.bmp");
+
         }
 
         private static void SaveBitmapPaletteBuffered(Dataset ds, string filename, int iOverview)
@@ -240,7 +244,10 @@ namespace Gdal020
                 }
             }
 
-            bitmap.Save(filename);
+            bitmap.Save(filename + ".bmp");
+            float scale = bitmap.Width / 1024;
+            Bitmap map = new Bitmap(bitmap, new Size(1024, (int)(bitmap.Height / scale)));
+            map.Save(filename + "_icon.bmp");
         }
 
         private static void SaveBitmapGrayBuffered(Dataset ds, string filename, int iOverview)
@@ -275,7 +282,10 @@ namespace Gdal020
                 }
             }
 
-            bitmap.Save(filename);
+            bitmap.Save(filename + ".bmp");
+            float scale = bitmap.Width / 1024;
+            Bitmap map = new Bitmap(bitmap, new Size(1024, (int)(bitmap.Height / scale)));
+            map.Save(filename + "_icon.bmp");
         }
     }
 }

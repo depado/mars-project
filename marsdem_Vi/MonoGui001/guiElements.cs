@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Input;
+using System.IO;
 
 
 namespace MonoGui001
@@ -16,12 +17,13 @@ namespace MonoGui001
     {
         // var
         public string AssetName;
-        private Texture2D GUITexture;
-        private Rectangle GUIRectangle;
+        protected Texture2D GUITexture;
+        protected Rectangle GUIRectangle;
         
         // mouseEvent handling
         public delegate void ElementClicked(string element);
         public event ElementClicked ClickEvent;
+
 
         public guiElements(string AssetName)
         {
@@ -92,8 +94,17 @@ namespace MonoGui001
             spritebatch.DrawString(sf, text, new Vector2(positionX, positionY), color);
         }
 
-         
-        
+        public void TextFromFile(SpriteBatch spritebatch, SpriteFont sf, string file, Color color)
+        {
+            
+            int positionX = PosX();
+            int positionY = PosY() + 10;
+            TextReader tr = new StreamReader(file);
+            spritebatch.DrawString(sf, tr.ReadToEnd(), new Vector2(positionX, positionY), color);
+            
+            tr.Close();
+
+        }
 
         /*********************************************
          * LOADING CONTENTS 
