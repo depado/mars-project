@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsProject", "MarsProject.csproj", "{F52D3A81-7984-4DAD-A309-5B833F5F1C98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Content-PipeLine", "Content-PipeLine\Content-PipeLine.contentproj", "{AAFE864E-FEE1-4EFF-9068-D45C2F2051EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsProjectContent", "MarsProjectContent\MarsProjectContent.contentproj", "{941E962A-5285-4E2F-9CD0-03BEF20A7024}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AAFE864E-FEE1-4EFF-9068-D45C2F2051EE}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{AAFE864E-FEE1-4EFF-9068-D45C2F2051EE}.Debug|x86.Build.0 = Debug|Any CPU
-		{AAFE864E-FEE1-4EFF-9068-D45C2F2051EE}.Release|x86.ActiveCfg = Release|Any CPU
-		{AAFE864E-FEE1-4EFF-9068-D45C2F2051EE}.Release|x86.Build.0 = Release|Any CPU
+		{941E962A-5285-4E2F-9CD0-03BEF20A7024}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{941E962A-5285-4E2F-9CD0-03BEF20A7024}.Debug|x86.Build.0 = Debug|Any CPU
+		{941E962A-5285-4E2F-9CD0-03BEF20A7024}.Release|x86.ActiveCfg = Release|Any CPU
+		{941E962A-5285-4E2F-9CD0-03BEF20A7024}.Release|x86.Build.0 = Release|Any CPU
 		{F52D3A81-7984-4DAD-A309-5B833F5F1C98}.Debug|x86.ActiveCfg = Debug|x86
 		{F52D3A81-7984-4DAD-A309-5B833F5F1C98}.Debug|x86.Build.0 = Debug|x86
 		{F52D3A81-7984-4DAD-A309-5B833F5F1C98}.Release|x86.ActiveCfg = Release|x86
