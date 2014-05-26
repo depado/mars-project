@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "marsdem_Vi", "marsdem_Vi\ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGui001", "MonoGui001\MonoGui001.csproj", "{9F824D77-5934-4302-A842-2E3CA6D1131E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gdal020", "Gdal020\Gdal020.csproj", "{14A49360-142F-4E18-B470-53E93A49AB18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,16 @@ Global
 		{9F824D77-5934-4302-A842-2E3CA6D1131E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{9F824D77-5934-4302-A842-2E3CA6D1131E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{9F824D77-5934-4302-A842-2E3CA6D1131E}.Release|x86.ActiveCfg = Release|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{14A49360-142F-4E18-B470-53E93A49AB18}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
